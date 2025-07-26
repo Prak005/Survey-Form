@@ -1,4 +1,64 @@
-#survey-form{
-    font-size: 24px;
+body{
     font-family: 'Times New Roman', Times, serif;
+    margin:auto;
+    /* background-color: black; */
+    color: white;
+    padding:0 25%;
+
+    background: linear-gradient(135deg, #ff6ec5, #7773f5, #4ade80);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+#survey-form{
+    font-size: 25px;
+}
+#description{
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 5%;
+}
+#title{
+    margin-top: 80px;
+    font-size: 60px;
+}
+#survey-form{
+    display: flex;
+    flex-direction: column;
+}
+#name, #email, #number, #dropdown, .text-review{
+    margin-right: auto;
+    margin-bottom: 5%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#gap, .review{
+    padding-top: 5%;
+}
+#submit{
+    color:#F9FAF8;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: #ff6ec5;
+    border: 3px solid white;
+    margin-right: auto;
+    padding: 5px;
+}
+#radio, #checkbox{
+    margin-right:auto;
+}
+
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
